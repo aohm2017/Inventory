@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Inventory.Models.MakeupProduct>
+
+@{
+    ViewData["Title"] = "Makeup Home";
+}
+
+<h2>Makeup Home</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.Label("Product")
+            </th>
+            <th>
+                @Html.Label("Brand")
+            </th>
+            <th>
+                @Html.Label("Ounce")
+            </th>
+            <th>
+                @Html.Label("Price")
+            </th>
+            <th>
+                @Html.Label("Price per ounce")
+            </th>
+            <th>@Html.Label("Reviews/Swatches")</th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.MakeupCategoryNavigation)*@
+                @Html.Label("Category")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ounce)
+            </td>
+            <td>
+                @string.Format("{0:C}", item.Price)
+            </td>
+            <td>
+                @string.Format("{0:C}", item.PricePerOunce)
+            </td>
+            <td>
+                @Html.Raw(item.ProductLink)
+                @*@Html.DisplayFor(modelItem => item.ProductLink)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MakeupCategoryNavigation.Category)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
