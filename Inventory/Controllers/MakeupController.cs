@@ -59,7 +59,7 @@ namespace Inventory.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Product,Brand,Ounce,Price,PricePerOunce,ProductLink,MakeupCategory")] MakeupProduct makeupProduct)
+        public async Task<IActionResult> Create([Bind("Id,Product,Brand,Ounce,Price,PricePerOunce,ProductLink,Comments,DatePurchased,MakeupCategory")] MakeupProduct makeupProduct)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace Inventory.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Product,Brand,Ounce,Price,PricePerOunce,ProductLink,MakeupCategory")] MakeupProduct makeupProduct)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Product,Brand,Ounce,Price,PricePerOunce,ProductLink,Comments,DatePurchased,MakeupCategory")] MakeupProduct makeupProduct)
         {
             if (id != makeupProduct.Id)
             {
