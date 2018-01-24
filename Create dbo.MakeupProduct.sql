@@ -8,6 +8,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+DROP TABLE dbo.[MakeupProduct]
+
 CREATE TABLE [dbo].[MakeupProduct] (
     [Id]             UNIQUEIDENTIFIER NOT NULL,
     [Product]        VARCHAR (250)    NULL,
@@ -16,6 +18,8 @@ CREATE TABLE [dbo].[MakeupProduct] (
     [Price]          FLOAT (53)       NULL,
     [PricePerOunce]  FLOAT (53)       NULL,
     [ProductLink]    VARCHAR (250)    NULL,
+	[Comments]		VARCHAR(MAX)	NULL,
+	[DatePurchased]			DATETIME	NULL,
     [MakeupCategory] UNIQUEIDENTIFIER NULL
 );
 
