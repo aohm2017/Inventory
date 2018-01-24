@@ -27,7 +27,15 @@
             <th>
                 @Html.Label("Price per ounce")
             </th>
-            <th>@Html.Label("Reviews/Swatches")</th>
+            <th>
+                @Html.Label("Reviews/Swatches")
+            </th>
+            <th>
+                @Html.Label("Comments")
+            </th>
+            <th>
+                @Html.Label("Date Purchased")
+            </th>
             <th>
                 @Html.Label("Category")
             </th>
@@ -55,6 +63,12 @@
             <td>
                 @Html.Raw(item.ProductLink)
                 @*@Html.DisplayFor(modelItem => item.ProductLink)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatePurchased)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MakeupCategoryNavigation.Category)
