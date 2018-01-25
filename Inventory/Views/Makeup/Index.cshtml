@@ -4,81 +4,42 @@
     ViewData["Title"] = "Makeup Home";
 }
 
-<h2>Makeup Home</h2>
+<h2>Makeup Dashboard</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<div>
+<table border="1" style="padding:5px; text-align:center;">
     <thead>
         <tr>
             <th>
-                @Html.Label("Product")
+                Category
             </th>
-            <th>
-                @Html.Label("Brand")
-            </th>
-            <th>
-                @Html.Label("Ounce")
-            </th>
-            <th>
-                @Html.Label("Price")
-            </th>
-            <th>
-                @Html.Label("Price per ounce")
-            </th>
-            <th>
-                @Html.Label("Reviews/Swatches")
-            </th>
-            <th>
-                @Html.Label("Comments")
-            </th>
-            <th>
-                @Html.Label("Date Purchased")
-            </th>
-            <th>
-                @Html.Label("Category")
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Product)
+                <a asp-area="" asp-controller="Makeup" asp-action="EyeIndex">Eye Makeup</a>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Brand)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ounce)
-            </td>
-            <td>
-                @string.Format("{0:C}", item.Price)
-            </td>
-            <td>
-                @string.Format("{0:C}", item.PricePerOunce)
-            </td>
-            <td>
-                @Html.Raw(item.ProductLink)
-                @*@Html.DisplayFor(modelItem => item.ProductLink)*@
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Comments)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DatePurchased)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MakeupCategoryNavigation.Category)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                Eyeshadow palettes, shadow singles, mascara and eye liner
             </td>
         </tr>
-}
+        <tr>
+            <td>
+                <a asp-area="" asp-controller="Makeup" asp-action="FaceIndex">Face Makeup</a>
+            </td>
+            <td>
+                Foundation, concealers, blushes, highlighters, contour
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a asp-area="" asp-controller="Makeup" asp-action="LipIndex">Lip Makeup</a>
+            </td>
+            <td>
+                Bullet lipsticks, liquid lipsticks, glosses, lip liner, lip primer
+            </td>
+        </tr>
     </tbody>
 </table>
+    </div>

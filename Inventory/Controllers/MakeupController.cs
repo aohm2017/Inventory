@@ -20,11 +20,38 @@ namespace Inventory.Controllers
             _context = context;
         }
 
-        // GET: Makeup
-        public async Task<IActionResult> Index()
+        public ActionResult Index ()
         {
-            var inventoryContext = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation);
+            return View();
+        }
+        // GET: Makeup
+        public async Task<IActionResult> EyeIndex()
+        {
+            var eyes = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation).Where(m => m.MakeupCategoryNavigation.SubCategory.Contains("Eye"));
+
+            //var inventoryContext = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation);
+            var inventoryContext = eyes;
             
+            return View(await inventoryContext.ToListAsync());
+        }
+
+        public async Task<IActionResult> FaceIndex()
+        {
+            var eyes = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation).Where(m => m.MakeupCategoryNavigation.SubCategory.Contains("Face"));
+
+            //var inventoryContext = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation);
+            var inventoryContext = eyes;
+
+            return View(await inventoryContext.ToListAsync());
+        }
+
+        public async Task<IActionResult> LipIndex()
+        {
+            var eyes = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation).Where(m => m.MakeupCategoryNavigation.SubCategory.Contains("Lip"));
+
+            //var inventoryContext = _context.MakeupProduct.Include(m => m.MakeupCategoryNavigation);
+            var inventoryContext = eyes;
+
             return View(await inventoryContext.ToListAsync());
         }
 
@@ -66,7 +93,7 @@ namespace Inventory.Controllers
                 makeupProduct.Id = Guid.NewGuid();
                 _context.Add(makeupProduct);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(EyeIndex));
             }
             ViewData["MakeupCategory"] = new SelectList(_context.MakeupCategory, "Id", "Category", makeupProduct.MakeupCategory);
             return View(makeupProduct);
@@ -119,7 +146,7 @@ namespace Inventory.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(EyeIndex));
             }
             ViewData["MakeupCategory"] = new SelectList(_context.MakeupCategory, "Id", "Category", makeupProduct.MakeupCategory);
             return View(makeupProduct);
@@ -152,7 +179,7 @@ namespace Inventory.Controllers
             var makeupProduct = await _context.MakeupProduct.SingleOrDefaultAsync(m => m.Id == id);
             _context.MakeupProduct.Remove(makeupProduct);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(EyeIndex));
         }
 
         private bool MakeupProductExists(Guid id)
