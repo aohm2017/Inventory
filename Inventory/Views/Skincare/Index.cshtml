@@ -61,7 +61,7 @@
                 @string.Format("{0:C}", item.PricePerOunce)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductLink)
+                @Html.Raw(item.ProductLink)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Comments)
@@ -70,7 +70,7 @@
                 @Html.DisplayFor(modelItem => item.DatePurchased)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SkincareCategoryNavigation.Id)
+                @Html.DisplayFor(modelItem => item.SkincareCategoryNavigation.Category)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

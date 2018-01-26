@@ -36,9 +36,6 @@
             <th>
                 @Html.Label("Date Purchased")
             </th>
-            <th>
-                @Html.Label("Category")
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -61,16 +58,13 @@
                 @string.Format("{0:C}", item.PricePerOunce)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductLink)
+                @Html.Raw(item.ProductLink)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Comments)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DatePurchased)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MakeupCategoryNavigation.Id)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
