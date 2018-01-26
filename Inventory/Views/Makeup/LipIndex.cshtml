@@ -55,10 +55,10 @@
                 @Html.DisplayFor(modelItem => item.Ounce)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                @string.Format("{0:C}", item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PricePerOunce)
+                @string.Format("{0:C}", item.PricePerOunce)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ProductLink)

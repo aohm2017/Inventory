@@ -1,11 +1,12 @@
-﻿@model Inventory.Models.MakeupProduct
+﻿@model Inventory.Models.SkincareProduct
 
 @{
-    ViewData["Title"] = "Create a product";
+    ViewData["Title"] = "Create";
 }
 
-<h2>Create a new product</h2>
+<h2>Create</h2>
 
+<h4>SkincareProduct</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -22,9 +23,9 @@
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ounce" class="control-label"></label>
-                <input asp-for="Ounce" class="form-control" />
-                <span asp-validation-for="Ounce" class="text-danger"></span>
+                <label asp-for="Ounces" class="control-label"></label>
+                <input asp-for="Ounces" class="form-control" />
+                <span asp-validation-for="Ounces" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
@@ -37,13 +38,12 @@
                 <span asp-validation-for="PricePerOunce" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductLink" class="control-label">Product Link (Swatches)</label>
-                <p>@Html.Display("<a href='' target='_blank'></a>")</p>
+                <label asp-for="ProductLink" class="control-label">Product Link</label>
                 <input asp-for="ProductLink" class="form-control" />
                 <span asp-validation-for="ProductLink" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Comments" class="control-label">Comments</label>
+                <label asp-for="Comments" class="control-label"></label>
                 <input asp-for="Comments" class="form-control" />
                 <span asp-validation-for="Comments" class="text-danger"></span>
             </div>
@@ -53,8 +53,8 @@
                 <span asp-validation-for="DatePurchased" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MakeupCategory" class="control-label">Category</label>
-                <select asp-for="MakeupCategory" class="form-control" asp-items="ViewBag.MakeupCategory"></select>
+                <label asp-for="SkincareCategory" class="control-label">Category</label>
+                <select asp-for="SkincareCategory" class ="form-control" asp-items="ViewBag.SkincareCategory"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
