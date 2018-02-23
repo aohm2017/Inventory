@@ -1,0 +1,12 @@
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.deps.json
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.runtimeconfig.json
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.runtimeconfig.dev.json
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.dll
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.pdb
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.AssemblyInfoInputs.cache
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.AssemblyInfo.cs
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.dll
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.pdb
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.csprojResolveAssemblyReference.cache

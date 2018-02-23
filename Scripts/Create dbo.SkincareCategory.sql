@@ -1,7 +1,7 @@
 ﻿USE [Inventory]
 GO
 
-/****** Object: Table [dbo].[SkincareCategory] Script Date: 1/24/2018 10:27:34 AM ******/
+/****** Object: Table [dbo].[SkincareCategory] Script Date: 2/23/2018 11:41:13 AM ******/
 SET ANSI_NULLS ON
 GO
 

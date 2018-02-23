@@ -1,4 +1,4 @@
-﻿INSERT INTO [dbo].[SkincareCategory] ([Id], [Category], [Description]) VALUES (N'4e1fe160-bc4b-4204-8b6a-072a55831152', N'Second Cleanser', N'Cleanser used to remove extra residue from first cleanser and to remove extra dirt')
+INSERT INTO [dbo].[SkincareCategory] ([Id], [Category], [Description]) VALUES (N'4e1fe160-bc4b-4204-8b6a-072a55831152', N'Second Cleanser', N'Cleanser used to remove extra residue from first cleanser and to remove extra dirt')
 INSERT INTO [dbo].[SkincareCategory] ([Id], [Category], [Description]) VALUES (N'dd5f85f2-8cb8-43b7-8aa1-0bbb11220265', N'Mask', N'Used bi-weekly')
 INSERT INTO [dbo].[SkincareCategory] ([Id], [Category], [Description]) VALUES (N'fe9ecbe3-1e61-4c39-b4e6-17f4f37dfbdb', N'Toner', N'Remove anything left behind from cleansers and to restore pH')
 INSERT INTO [dbo].[SkincareCategory] ([Id], [Category], [Description]) VALUES (N'a530eaca-a59b-4a56-8d4b-2186e436959e', N'First Cleanser', N'Oil cleanser or makeup remover')
