@@ -13125,7 +13125,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adhil\\.nuget\\packages\\": {},
+    "C:\\Users\\Alyssa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13134,18 +13135,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\adhil\\OneDrive\\Documents\\GitHub\\Inventory\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\Alyssa\\Documents\\GitHub\\Inventory\\Inventory\\Inventory.csproj",
       "projectName": "Inventory",
-      "projectPath": "C:\\Users\\adhil\\OneDrive\\Documents\\GitHub\\Inventory\\Inventory\\Inventory.csproj",
-      "packagesPath": "C:\\Users\\adhil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adhil\\OneDrive\\Documents\\GitHub\\Inventory\\Inventory\\obj\\",
+      "projectPath": "C:\\Users\\Alyssa\\Documents\\GitHub\\Inventory\\Inventory\\Inventory.csproj",
+      "packagesPath": "C:\\Users\\Alyssa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alyssa\\Documents\\GitHub\\Inventory\\Inventory\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\adhil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Alyssa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -13168,28 +13171,28 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.2"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.5"
+            "version": "[2.0.2, )"
           }
         },
         "imports": [

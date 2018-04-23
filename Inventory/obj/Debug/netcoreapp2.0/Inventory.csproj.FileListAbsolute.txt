@@ -10,3 +10,15 @@ C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreap
 C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.pdb
 C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\adhil\OneDrive\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.csprojResolveAssemblyReference.cache
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.deps.json
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.runtimeconfig.json
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.runtimeconfig.dev.json
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.dll
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\bin\Debug\netcoreapp2.0\Inventory.pdb
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.csprojResolveAssemblyReference.cache
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.AssemblyInfoInputs.cache
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.AssemblyInfo.cs
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.dll
+C:\Users\Alyssa\Documents\GitHub\Inventory\Inventory\obj\Debug\netcoreapp2.0\Inventory.pdb
